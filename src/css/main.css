@@ -1,33 +1,125 @@
 
-/* PINK + BLUE COLOR OVERRIDE */
+/* ===================================== */
+/* PINK + BLUE THEME                     */
+/* ===================================== */
 
 :root {
-  --page-bg: #111832;
-  --sidebar-bg: #251c48;
-  --text-main: #fff0fb;
-  --text-soft: #d4c2ef;
-  --pink: #ec4899;
+  --border: #60477f;
+  --sidebar-width: clamp(280px, 22vw, 340px);
+  --sidebar-bg: #24163f;
+  --page-bg: #10152e;
+  --text-main: #fdf2ff;
+  --text-soft: #c9b8e8;
+  --pink: #ff4fa3;
   --green: #38bdf8;
   --orange: #f9a8d4;
-  --active-bg: #503877;
-  --hover-bg: #382957;
+  --active-bg: #50316f;
+  --hover-bg: #382452;
+  --overlay: rgba(12, 10, 34, 0.75);
+}
+
+/* ===================================== */
+/* BACKGROUND                            */
+/* ===================================== */
+
+html {
+  min-height: 100%;
 }
 
 body {
+  min-height: 100vh;
+  margin: 0;
+  color: var(--text-main);
+
   background: linear-gradient(
     135deg,
-    #111832,
-    #253e78,
-    #8b3d91
+    #10152e 0%,
+    #292050 45%,
+    #672e80 100%
   ) !important;
+
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
+/* ===================================== */
+/* SIDEBAR                               */
+/* ===================================== */
+
+.app-sidebar {
+  background: rgba(36, 22, 63, 0.96);
+  color: var(--text-main);
+  border-right: 1px solid var(--border);
+  backdrop-filter: blur(14px);
+}
+
+/* ===================================== */
+/* TITLES                                */
+/* ===================================== */
+
+.app-title {
+  color: #fff0fb;
+}
+
+.app-subtitle {
+  color: #c9b8e8;
+}
+
+/* ===================================== */
+/* TABLE                                 */
+/* ===================================== */
+
+.app-tbl th {
+  background: #50316f;
+  color: #fff0fb;
+}
+
+.app-tbl td {
+  background: rgba(36, 29, 75, 0.85);
+  color: #f4eaff;
+  border-color: #60477f;
+}
+
+.app-tbl tr:hover td {
+  background: #604080;
+}
+
+/* ===================================== */
+/* BUTTONS                               */
+/* ===================================== */
+
 .button.is-primary {
-  background-color: #ec4899;
-  border-color: #ec4899;
+  background: #ec4899;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  transition: 0.25s ease;
+}
+
+.button.is-primary:hover {
+  background: #db2777;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(236, 72, 153, 0.3);
 }
 
 .button.is-secondary {
-  background-color: #38bdf8;
-  border-color: #38bdf8;
+  background: #38bdf8;
+  color: #10152e;
+  border: none;
+  border-radius: 10px;
+}
+
+.button.is-secondary:hover {
+  background: #0ea5e9;
+}
+
+/* ===================================== */
+/* MOBILE SIDEBAR                        */
+/* ===================================== */
+
+@media screen and (max-width: 768px) {
+  .app-sidebar {
+    background: #24163f;
+  }
 }
