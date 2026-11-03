@@ -1,17 +1,17 @@
 
 :root {
-  --border: #31574d;
+  --border: #60477f;
   --sidebar-width: clamp(280px, 22vw, 340px);
-  --sidebar-bg: #163d35;
-  --page-bg: #0c2420;
-  --text-main: #f0fff8;
-  --text-soft: #a7cfc1;
-  --pink: #ff6b9d;
-  --green: #22c55e;
-  --orange: #ff9f43;
-  --active-bg: #285a46;
-  --hover-bg: #20483c;
-  --overlay: rgba(5, 28, 23, 0.75);
+  --sidebar-bg: #24163f;
+  --page-bg: #10152e;
+  --text-main: #fdf2ff;
+  --text-soft: #c9b8e8;
+  --pink: #ff4fa3;
+  --green: #38bdf8;
+  --orange: #f9a8d4;
+  --active-bg: #50316f;
+  --hover-bg: #382452;
+  --overlay: rgba(12, 10, 34, 0.75);
 }
 
 html {
@@ -22,44 +22,44 @@ body {
   min-height: 100vh;
   margin: 0;
   color: var(--text-main);
-  background: linear-gradient(135deg, #0c2420 0%, #174d3e 45%, #286b50 100%);
+  background: linear-gradient(135deg, #10152e 0%, #292050 45%, #672e80 100%);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .app-sidebar {
-  background: rgba(22, 61, 53, 0.96);
+  background: rgba(36, 22, 63, 0.96);
   color: var(--text-main);
   border-right: 1px solid var(--border);
   backdrop-filter: blur(14px);
 }
 
 .app-title {
-  color: #f0fff8;
+  color: #fff0fb;
 }
 
 .app-subtitle {
-  color: #a7cfc1;
+  color: #c9b8e8;
 }
 
 .app-tbl th {
-  background: #285a46;
-  color: #f0fff8;
+  background: #50316f;
+  color: #fff0fb;
 }
 
 .app-tbl td {
-  background: rgba(20, 66, 52, 0.85);
-  color: #e0fff0;
-  border-color: #31574d;
+  background: rgba(36, 29, 75, 0.85);
+  color: #f4eaff;
+  border-color: #60477f;
 }
 
 .app-tbl tr:hover td {
-  background: #357456;
+  background: #604080;
 }
 
 .button.is-primary {
-  background: #10b981;
+  background: #ec4899;
   color: white;
   border: none;
   border-radius: 10px;
@@ -67,25 +67,25 @@ body {
 }
 
 .button.is-primary:hover {
-  background: #059669;
+  background: #db2777;
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.3);
+  box-shadow: 0 6px 20px rgba(236, 72, 153, 0.3);
 }
 
 .button.is-secondary {
-  background: #ff9f43;
-  color: #0c2420;
+  background: #38bdf8;
+  color: #10152e;
   border: none;
   border-radius: 10px;
 }
 
 .button.is-secondary:hover {
-  background: #ff6b35;
+  background: #0ea5e9;
 }
 
 @media screen and (max-width: 768px) {
   .app-sidebar {
-    background: #163d35;
+    background: #24163f;
   }
 }
 
