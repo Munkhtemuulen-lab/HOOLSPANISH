@@ -1,92 +1,92 @@
 
+/* ===== PINK + BLUE THEME ===== */
+
 :root {
-  --border: #60477f;
-  --sidebar-width: clamp(280px, 22vw, 340px);
-  --sidebar-bg: #24163f;
-  --page-bg: #10152e;
-  --text-main: #fdf2ff;
-  --text-soft: #c9b8e8;
+  --border: #66528b;
+  --sidebar-bg: #251c48;
+  --page-bg: #111832;
+  --text-main: #fff0fb;
+  --text-soft: #d4c2ef;
   --pink: #ff4fa3;
   --green: #38bdf8;
-  --orange: #f9a8d4;
-  --active-bg: #50316f;
-  --hover-bg: #382452;
+  --orange: #ff8acb;
+  --active-bg: #503877;
+  --hover-bg: #382957;
   --overlay: rgba(12, 10, 34, 0.75);
 }
 
-html {
+html,
+body {
   min-height: 100%;
 }
 
 body {
-  min-height: 100vh;
-  margin: 0;
-  color: var(--text-main);
-  background: linear-gradient(135deg, #10152e 0%, #292050 45%, #672e80 100%);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: linear-gradient(
+    135deg,
+    #111832 0%,
+    #253e78 50%,
+    #8b3d91 100%
+  ) !important;
+
+  background-attachment: fixed !important;
+  color: #fff0fb !important;
 }
 
+/* Sidebar */
 .app-sidebar {
-  background: rgba(36, 22, 63, 0.96);
-  color: var(--text-main);
-  border-right: 1px solid var(--border);
-  backdrop-filter: blur(14px);
+  background: #251c48 !important;
+  color: #fff0fb !important;
+  border-color: #66528b !important;
 }
 
+/* Titles */
 .app-title {
-  color: #fff0fb;
+  color: #fff0fb !important;
 }
 
 .app-subtitle {
-  color: #c9b8e8;
+  color: #d4c2ef !important;
 }
 
+/* Tables */
 .app-tbl th {
-  background: #50316f;
-  color: #fff0fb;
+  background: #503877 !important;
+  color: white !important;
 }
 
 .app-tbl td {
-  background: rgba(36, 29, 75, 0.85);
-  color: #f4eaff;
-  border-color: #60477f;
+  background: #251c48 !important;
+  color: #f7eaff !important;
+  border-color: #66528b !important;
 }
 
 .app-tbl tr:hover td {
-  background: #604080;
+  background: #493575 !important;
 }
 
+/* Buttons */
 .button.is-primary {
-  background: #ec4899;
-  color: white;
-  border: none;
-  border-radius: 10px;
-  transition: 0.25s ease;
+  background: #ec4899 !important;
+  border-color: #ec4899 !important;
+  color: white !important;
 }
 
 .button.is-primary:hover {
-  background: #db2777;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(236, 72, 153, 0.3);
+  background: #db2777 !important;
 }
 
 .button.is-secondary {
-  background: #38bdf8;
-  color: #10152e;
-  border: none;
-  border-radius: 10px;
+  background: #38bdf8 !important;
+  border-color: #38bdf8 !important;
+  color: #111832 !important;
 }
 
 .button.is-secondary:hover {
-  background: #0ea5e9;
+  background: #0ea5e9 !important;
 }
 
 @media screen and (max-width: 768px) {
   .app-sidebar {
-    background: #24163f;
+    background: #251c48 !important;
   }
 }
-
-/*# sourceMappingURL=main.css.map */
