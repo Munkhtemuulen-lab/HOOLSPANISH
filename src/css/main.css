@@ -1,92 +1,33 @@
 
-/* ===== PINK + BLUE THEME ===== */
+/* PINK + BLUE COLOR OVERRIDE */
 
 :root {
-  --border: #66528b;
-  --sidebar-bg: #251c48;
   --page-bg: #111832;
+  --sidebar-bg: #251c48;
   --text-main: #fff0fb;
   --text-soft: #d4c2ef;
-  --pink: #ff4fa3;
+  --pink: #ec4899;
   --green: #38bdf8;
-  --orange: #ff8acb;
+  --orange: #f9a8d4;
   --active-bg: #503877;
   --hover-bg: #382957;
-  --overlay: rgba(12, 10, 34, 0.75);
-}
-
-html,
-body {
-  min-height: 100%;
 }
 
 body {
   background: linear-gradient(
     135deg,
-    #111832 0%,
-    #253e78 50%,
-    #8b3d91 100%
+    #111832,
+    #253e78,
+    #8b3d91
   ) !important;
-
-  background-attachment: fixed !important;
-  color: #fff0fb !important;
 }
 
-/* Sidebar */
-.app-sidebar {
-  background: #251c48 !important;
-  color: #fff0fb !important;
-  border-color: #66528b !important;
-}
-
-/* Titles */
-.app-title {
-  color: #fff0fb !important;
-}
-
-.app-subtitle {
-  color: #d4c2ef !important;
-}
-
-/* Tables */
-.app-tbl th {
-  background: #503877 !important;
-  color: white !important;
-}
-
-.app-tbl td {
-  background: #251c48 !important;
-  color: #f7eaff !important;
-  border-color: #66528b !important;
-}
-
-.app-tbl tr:hover td {
-  background: #493575 !important;
-}
-
-/* Buttons */
 .button.is-primary {
-  background: #ec4899 !important;
-  border-color: #ec4899 !important;
-  color: white !important;
-}
-
-.button.is-primary:hover {
-  background: #db2777 !important;
+  background-color: #ec4899;
+  border-color: #ec4899;
 }
 
 .button.is-secondary {
-  background: #38bdf8 !important;
-  border-color: #38bdf8 !important;
-  color: #111832 !important;
-}
-
-.button.is-secondary:hover {
-  background: #0ea5e9 !important;
-}
-
-@media screen and (max-width: 768px) {
-  .app-sidebar {
-    background: #251c48 !important;
-  }
+  background-color: #38bdf8;
+  border-color: #38bdf8;
 }
