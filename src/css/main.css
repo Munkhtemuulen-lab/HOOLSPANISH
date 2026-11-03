@@ -22898,11 +22898,10 @@ has-background-danger.is-hoverable:active {
 /* =========================
    DESKTOP (>=769px)
 ========================= */
-@media screen and (min-width: 769px) {
-  .app-mobile-sidebar,
-  .app-sidebar-mobile-head {
-    /* Mobile-д зориулсан элементүүдийг нуух */
-    display: none;
+@media screen and (max-width: 768px) {
+  .app-shell {
+    display: block; /* Sidebar + main layout-ийг stack болгоно */
+    height: auto;
   }
   .app-sidebar {
     /* Sidebar-г буцааж хэвийн layout-д оруулна */
